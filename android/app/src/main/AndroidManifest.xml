@@ -11,6 +11,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="my_route"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDPmUS4c0pzu_o-zFamwJWKViivjVeGqrM"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -18,12 +19,11 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyDPmUS4c0pzu_o-zFamwJWKViivjVeGqrM"/>
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
